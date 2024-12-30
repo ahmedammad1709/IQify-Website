@@ -51,7 +51,7 @@
   }
 
   #logo1 {
-    background-image: url("Graphics/mainlogo.png");
+    background-image: url("mainlogo.png");
     background-position: center;    
     background-repeat: no-repeat;
     background-size: contain;
