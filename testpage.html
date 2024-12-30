@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQ Test</title>
+  <link rel="stylesheet" href="testpage.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Timer -->
+  <div id="timer" class="hidden">Time Elapsed: <span id="time-elapsed">0:00</span></div>
+
+<!-- Details of user for certification. -->
+  <div id="user-info">
+    <h2>Please enter your Credentials</h2>
+    <form id="user-info-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required><br><br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" required><br><br>
+      <button type="submit">Start IQ Test</button>
+    </form>
+  </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/IQify logo.png" alt="Logo" style="width:80px;" class="rounded-pill">
+          </a>
+        </div>
+      </nav>
+
+  <div class="container blur">
+    <h1>IQ Test</h1>
+    <p>Answer all the questions below and click "Submit" to see your results.</p>
+
+    <form id="iq-test-form">
+      <!-- Question 1 -->
+      <div class="question">
+        <h3>1. What comes next in the series: 2, 6, 12, 20, 30, ...?</h3>
+        <label><input type="radio" name="q1" value="42"> 42</label><br>
+        <label><input type="radio" name="q1" value="56"> 56</label><br>
+        <label><input type="radio" name="q1" value="72"> 72</label><br>
+        <label><input type="radio" name="q1" value="12"> 12</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <h3>2. Which shape is the odd one out?</h3>
+        <label><input type="radio" name="q2" value="square"> square</label><br>
+        <label><input type="radio" name="q2" value="circle"> circle</label><br>
+        <label><input type="radio" name="q2" value="triangle"> Triangle</label><br>
+        <label><input type="radio" name="q2" value="pentagon"> Pentagon</label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <h3>3. If John is older than Mary, and Mary is older than Steve, who is the youngest?</h3>
+        <label><input type="radio" name="q3" value="Mary"> Mary</label><br>
+        <label><input type="radio" name="q3" value="John"> John</label><br>
+        <label><input type="radio" name="q3" value="Steve"> Steve</label><br>
+        <label><input type="radio" name="q3" value="js"> John and Steve</label>
+      </div>
+
+       <!-- Question 4 -->
+       <div class="question">
+        <h3>4. What is the opposite of "exaggerate"?</h3>
+        <label><input type="radio" name="q4" value="Minimize"> Minimize</label><br>
+        <label><input type="radio" name="q4" value="Amplify"> Amplify</label><br>
+        <label><input type="radio" name="q4" value="Enhance"> Enhance</label><br>
+        <label><input type="radio" name="q4" value="Increase"> Increase</label>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question">
+        <h3>5. Solve: (12 × 3) + (15 ÷ 3) = ?</h3>
+        <label><input type="radio" name="q5" value="41"> 41</label><br>
+        <label><input type="radio" name="q5" value="36"> 36</label><br>
+        <label><input type="radio" name="q5" value="45"> 45</label><br>
+        <label><input type="radio" name="q5" value="42"> 42</label>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question">
+        <h3>6. All roses are flowers. Some flowers are red. Based on this, which is true?</h3>
+        <label><input type="radio" name="q6" value="All roses are red."> All roses are red.</label><br>
+        <label><input type="radio" name="q6" value="Some flowers are roses."> Some flowers are roses.</label><br>
+        <label><input type="radio" name="q6" value="Some red things are flowers."> Some red things are flowers.</label><br>
+        <label><input type="radio" name="q6" value="Some flowers are not red."> Some flowers are not red.</label>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question">
+        <h3>7. If 3 apples cost $9, how much do 7 apples cost?</h3>
+        <label><input type="radio" name="q7" value="20"> $20</label><br>
+        <label><input type="radio" name="q7" value="19"> $19</label><br>
+        <label><input type="radio" name="q7" value="21"> $21</label><br>
+        <label><input type="radio" name="q7" value="18"> $18</label>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question">
+        <h3>8. Rearrange the letters "NESTVII" to form a word.</h3>
+        <label><input type="radio" name="q8" value="INVEST"> INVEST</label><br>
+        <label><input type="radio" name="q8" value="VESTINE"> VESTINE</label><br>
+        <label><input type="radio" name="q8" value="INVITES"> INVITES</label><br>
+        <label><input type="radio" name="q8" value="INTIVES"> INTIVES</label>
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question">
+        <h3>9. What is the missing term in the sequence? 1, 4, 9, 16, 25, __, 49</h3>
+        <label><input type="radio" name="q9" value="35"> 35</label><br>
+        <label><input type="radio" name="q9" value="40"> 40</label><br>
+        <label><input type="radio" name="q9" value="36"> 36</label><br>
+        <label><input type="radio" name="q9" value="30"> 30</label>
+      </div>
+
+      <!-- Question 10 -->
+      <div class="question">
+        <h3>10. Which number replaces the question mark? <br>     
+            4, 8, 16, 32, ?</h3>
+        <label><input type="radio" name="q10" value="64"> 64</label><br>
+        <label><input type="radio" name="q10" value="68"> 68</label><br>
+        <label><input type="radio" name="q10" value="62"> 62</label><br>
+        <label><input type="radio" name="q10" value="58"> 58</label>
+      </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11. What is 25% of 200? </h3>
+            <label><input type="radio" name="q11" value="25"> 25</label><br>
+            <label><input type="radio" name="q11" value="50"> 50</label><br>
+            <label><input type="radio" name="q11" value="75"> 75</label><br>
+            <label><input type="radio" name="q11" value="100"> 100</label>
+          </div>
+
+            <!-- Question 12 -->
+      <div class="question">
+        <h3>12. Which number is the smallest?</h3>
+        <label><input type="radio" name="q12" value="0.3"> 0.3</label><br>
+        <label><input type="radio" name="q12" value="2/5"> 2/5</label><br>
+        <label><input type="radio" name="q12" value="20%"> 20%</label><br>
+        <label><input type="radio" name="q12" value="1"> 1</label>
+      </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. What is the next letter in the sequence? <br>
+                A, C, F, J, O, ___</h3>
+            <label><input type="radio" name="q13" value="V"> V</label><br>
+            <label><input type="radio" name="q13" value="S"> S</label><br>
+            <label><input type="radio" name="q13" value="T"> T</label><br>
+            <label><input type="radio" name="q13" value="U"> U</label>
+          </div>
+
+
+            <!-- Question 14 -->
+      <div class="question">
+        <h3>14. If all Bloops are Razzies, some Razzies are Lazzies, <br>and no Lazzies are Quirks,
+             can we conclude that all Bloops are not Quirks?</h3>
+        <label><input type="radio" name="q14" value="Yes"> Yes</label><br>
+        <label><input type="radio" name="q14" value="No"> No</label><br>
+        <label><input type="radio" name="q14" value="Cannot be determined"> Cannot be determined</label><br>
+        <label><input type="radio" name="q14" value="Some Bloops are Quirks"> Some Bloops are Quirks</label>
+      </div>
+
+              <!-- Question 15 -->
+      <div class="question">
+        <h3>15. A number is divisible by both 3 and 5 but not 9. <br> Which of these numbers could it be?</h3>
+          <label><input type="radio" name="q15" value="15"> 15</label><br>
+          <label><input type="radio" name="q15" value="45"> 45</label><br>
+          <label><input type="radio" name="q15" value="30"> 30</label><br>
+          <label><input type="radio" name="q15" value="90"> 90</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="score-display" style="display:none;">
+        <h2>Your IQ Score: <span id="score"></span></h2>
+      </div>
+
+  </div>
+  <script src="testpage.js"></script>
+
+    <div id="rights">
+        <p>© 2024 IQify | All rights reserved.</p>
+    </div>
+
+</body>
+</html>

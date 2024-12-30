@@ -1,0 +1,111 @@
+/* Reset default body layout for navbar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: #f8f8f8;
+    background-color: #0A2423 !important;
+  }
+  
+  /* Add space below the navbar */
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  /* Ensure the certificate is below the navbar */
+  .certificate-container {
+    width: 80%;
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto; /* Center horizontally */
+    padding-top: 50px; 
+  }
+  
+  /* Certificate container styling */
+  .certificate-border {
+    border: 5px solid #dcab41;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  .certificate-header {
+    margin-bottom: 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+  
+  .certificate-header h2 {
+    font-size: 1.7rem;
+    color: #333333;
+    margin: 0;
+  }
+  
+  .certificate-header h1 {
+    font-size: 2.5rem;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .certificate-body {
+    margin: 20px 0;
+  }
+  
+  .certificate-body p {
+    font-size: 1.25rem;
+    color: #666666;
+    margin: 10px 0;
+  }
+  
+  .certificate-body h2 {
+    font-size: 2rem;
+    color: #dcab41;
+    margin: 10px 0;
+  }
+  
+  .certificate-body h1 {
+    font-size: 3rem;
+    color: #333333;
+    margin: 20px 0;
+  }
+  
+  .certificate-footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #666666;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .certificate-footer p {
+    margin: 5px 0;
+  }
+  
+#rights {
+    background-color: #040f0f !important;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+    height: 7vh;
+}
+#rights p{
+   margin: 0 auto;
+    top: 10px;
+    color: white;
+    font-size: 12px;
+}
+     
