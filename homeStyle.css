@@ -35,8 +35,13 @@
     border: 1px solid transparent;
   }
   
-  #button_navbar {
+  #a_button_navbar{
     height: 35px;
+    width: 100%;
+  }
+  
+  #button_navbar {
+    height: 100%;
     width: 100%;
     text-align: center;
     font-size: 16px;
