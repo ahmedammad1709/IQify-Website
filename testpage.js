@@ -35,7 +35,7 @@ window.onload = function () {
     const name = document.getElementById("name").value;
     const age = document.getElementById("age").value;
 
-    if (name && age) {
+    if (name && /^[a-zA-Z]+$/.test(name) && age>0) {
       // Store user name and age
       sessionStorage.setItem("userName", name);
       sessionStorage.setItem("userAge", age);
@@ -48,10 +48,14 @@ window.onload = function () {
       timerElement.classList.remove("hidden");
       startElapsedTimer();
     } else {
-      alert("Please enter your name and age.");
+      if(!/^[a-zA-Z]+$/.test(name)){
+        alert("Name should not be in Numbers!")
+      }
+      else if(age<=0){
+        alert("Please enter your correct age.");
+      }
     }
   });
-
 
   // Timer logic
   function startElapsedTimer() {
@@ -63,25 +67,7 @@ window.onload = function () {
     }, 1000);
   }
 
-  // Handle user info input and start quiz
-  const userInfoForm = document.getElementById('user-info-form');
-  userInfoForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-    const name = document.getElementById("name").value;
-    const age = document.getElementById("age").value;
-
-    if (name && age) {
-      // Store user name and age
-      sessionStorage.setItem('userName', name);
-      sessionStorage.setItem('userAge', age);
-
-      // Hide the user info form and show the quiz
-      document.getElementById("user-info").style.display = "none";
-      quizContainer.style.display = "block"; // Show quiz container
-    } else {
-      alert("Please enter your name and age.");
-    }
-  });
+  
 
   // Form submission logic for IQ Test
   document.getElementById("iq-test-form").addEventListener("submit", function (event) {
