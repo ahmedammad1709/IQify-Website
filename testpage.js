@@ -35,7 +35,7 @@ window.onload = function () {
     const name = document.getElementById("name").value;
     const age = document.getElementById("age").value;
 
-    if (name && /^[a-zA-Z]+$/.test(name) && age>0) {
+    if (name  && age>0) {
       // Store user name and age
       sessionStorage.setItem("userName", name);
       sessionStorage.setItem("userAge", age);
@@ -48,7 +48,7 @@ window.onload = function () {
       timerElement.classList.remove("hidden");
       startElapsedTimer();
     } else {
-      if(!/^[a-zA-Z]+$/.test(name)){
+      if(!name)){
         alert("Name should not be in Numbers!")
       }
       else if(age<=0){
