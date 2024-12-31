@@ -35,7 +35,7 @@ window.onload = function () {
     const name = document.getElementById("name").value;
     const age = document.getElementById("age").value;
 
-    if (name  && age>0) {
+    if (name && age>0) {
       // Store user name and age
       sessionStorage.setItem("userName", name);
       sessionStorage.setItem("userAge", age);
@@ -48,9 +48,10 @@ window.onload = function () {
       timerElement.classList.remove("hidden");
       startElapsedTimer();
     } else {
-     if(age<=0){
+       if(age<=0){
         alert("Please enter your correct age.");
       }
+     
     }
   });
 
