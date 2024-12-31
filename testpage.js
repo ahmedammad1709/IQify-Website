@@ -48,10 +48,7 @@ window.onload = function () {
       timerElement.classList.remove("hidden");
       startElapsedTimer();
     } else {
-      if(!name)){
-        alert("Name should not be in Numbers!")
-      }
-      else if(age<=0){
+     if(age<=0){
         alert("Please enter your correct age.");
       }
     }
