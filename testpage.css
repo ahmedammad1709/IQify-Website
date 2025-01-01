@@ -169,6 +169,9 @@ html, body {
   .hidden {
     display: none;
   }
+  .blur-bg{
+    backdrop-filter: blur(10px);
+  }
 
 #iq-test-form button{
       background-color: #61ff84;
